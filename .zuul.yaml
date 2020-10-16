@@ -15,7 +15,7 @@
 - job:
     name: unittests
     parent: base
-    run: playbooks/testjob.yaml
+    pre-run: playbooks/testjob.yaml
     
     
 - project:
