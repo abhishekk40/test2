@@ -11,3 +11,14 @@
     check:
       jobs:
         - noop
+        
+- job:
+    name: unittests
+    parent: base
+    run: playbooks/testjob.yaml
+    
+    
+- project:
+    check:
+      jobs:
+        - testjob
