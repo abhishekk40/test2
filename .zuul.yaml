@@ -1,6 +1,6 @@
 - job:
     name: testjob
-    run: playbooks/testjob.yaml
+    pre-run: playbooks/testjob.yaml
 
 - project:
     check:
@@ -11,14 +11,4 @@
     check:
       jobs:
         - noop
-        
-- job:
-    name: unittests
-    parent: base
-    pre-run: playbooks/testjob.yaml
-    
-    
-- project:
-    check:
-      jobs:
-        - testjob
+
