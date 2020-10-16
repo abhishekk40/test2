@@ -2,7 +2,7 @@
     name: testjob
     run: playbooks/testjob.yaml
 
-- project:
+- project: abhishekk40/test2
     check:
       jobs:
         - testjob
