@@ -1,6 +1,6 @@
 - job:
     name: calculator_job1
-    run: playbooks/calculator1.py
+    run: playbooks/calculato_job1.yaml
 - job:
     name: calculator_test_job
     run: playbooks/calculator_test_job.yaml
