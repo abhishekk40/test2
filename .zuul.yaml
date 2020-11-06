@@ -1,14 +1,25 @@
 - job:
-    name: testjob
-    run: playbooks/testjob.yaml
+    name: calculator_job1
+    run: playbooks/calculator_job1.yaml
+- job:
+    name: calculator_test_job
+    run: playbooks/calculator_test_job.yaml
+- job:
+    name: testjob2
+    run: playbooks/testjob2.yaml
+- job:
+    name: docker
+    run: playbooks/docker.yaml
 
 - project:
     check:
       jobs:
-        - testjob
+        - calculator_job1
+        - calculator_test_job
+        - testjob2
+        - docker
         
 - project:
     check:
       jobs:
         - noop
-
