@@ -2,4 +2,4 @@
   become: true
   tasks:
   - name: Copy and Execute the script
-    script: abhishekk40/test2/playbooks/calculator1.py
+  script: abhishekk40/test2/playbooks/calculator1.py
