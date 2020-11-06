@@ -3,6 +3,6 @@
   become: true
   tasks:
   - name: Copy and Execute the script
-    run: /playbooks/calculator_test.py
+    script: /playbooks/calculator_test.py
   - debug: 
       msg: Run calculator!!
