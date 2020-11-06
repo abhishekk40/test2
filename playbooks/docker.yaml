@@ -1,0 +1,6 @@
+- name: Pull latest python:alpine image
+  hosts: all
+  tasks:
+  - name: pull python-alpine image
+    docker_image:
+      name: python:alpine3.7
