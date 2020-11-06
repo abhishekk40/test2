@@ -1,4 +1,4 @@
-- hosts: 1ebd8c6bb801.ngrok.io
+- hosts: localhost
   tasks:
     - name: This is a test task
       debug:
