@@ -1,5 +1,4 @@
 - hosts: localhost
-  local_action:
   tasks:
     - name: This is a test task
       debug:
@@ -7,5 +6,6 @@
     - debug: var=ansible_date_time
     - debug: msg="the current date is {{ ansible_date_time.date }}"
     - name: Another test task
-      command: "pwd"
+      local_action:
+        command: "pwd"
       
