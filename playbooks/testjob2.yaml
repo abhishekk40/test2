@@ -1,6 +1,7 @@
 ---
 
 - hosts: localhost
+  connection: local
   tasks:
     - name: This is a test task
       debug:
