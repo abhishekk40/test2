@@ -1,5 +1,5 @@
 - hosts: localhost
-  connection: local
+  local_action:
   tasks:
     - name: This is a test task
       debug:
@@ -9,4 +9,3 @@
     - name: Another test task
       command: "pwd"
       
-    - debug: var=output.stdout_lines
