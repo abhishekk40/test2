@@ -7,5 +7,5 @@
     - debug: msg="the current date is {{ ansible_date_time.date }}"
     - name: Another test task
       local_action:
-        command: "pwd"
+      command: "pwd"
       
