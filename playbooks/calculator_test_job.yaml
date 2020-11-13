@@ -1,4 +1,6 @@
-- hosts: 1ebd8c6bb801.ngrok.io
+---
+
+- hosts: localhost
   become: true
   tasks:
   - debug: 
